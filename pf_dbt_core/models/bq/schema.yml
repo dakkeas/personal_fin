@@ -1,3 +1,35 @@
+version: 2
+
+models:
+  - name: deduplicated_raw_daily_spend
+    description: |
+      Deduplicated view of the raw daily spend ingestion table. Keeps the most
+      recently ingested row per logical record using `hash_key` and
+      `ROW_NUMBER()` ordering by `time_ingested`.
+    columns:
+      - name: unique_id
+        description: Unique identifier for the ingested row.
+        tests:
+          - not_null
+          - unique
+      - name: hash_key
+        description: Logical key used for deduplication. Should be generated
+          upstream and stable across reingests of the same logical record.
+        tests:
+          - not_null
+      - name: time_ingested
+        description: Human-readable timestamp formatted from the raw ingestion
+          time; includes timezone label (PHT) in this model.
+      - name: time_logged
+        description: Date parsed from raw `date` field.
+      - name: day_logged
+        description: Day of the week derived from `time_logged`.
+      - name: total_cost
+        description: Monetary cost associated with the line item.
+      - name: payment_type
+        description: Payment method used for the transaction.
+      - name: lineitem
+        description: Free-text description of the item or service purchased.
 
 version: 2
 

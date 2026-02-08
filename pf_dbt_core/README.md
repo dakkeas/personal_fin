@@ -16,6 +16,16 @@ Quick notes:
 dbt run --models path.to.model
 dbt test --models path.to.model
 ```
+Docs & local checks:
+
+```bash
+# Generate and preview the documentation site
+dbt docs generate
+dbt docs serve
+
+# Run tests for a single model
+dbt test --models deduplicated_raw_daily_spend
+```
 Welcome to your new dbt project!
 
 ### Using the starter project
