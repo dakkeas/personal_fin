@@ -1,0 +1,18 @@
+date,day,lineitem,quantity,total_cost,payment_type,type,subtype,time_ingested,unique_id
+02/05/2026,Thu,Bus Fare,1,142,cash,Transportation,Bus,2026-02-06T22:15:59.811374+08:00,3754db7e-9696-4d56-8bec-eeb3cd0454fe
+02/05/2026,Thu,MoveIt,1,117,bpi,Transportation,Moto Taxi,2026-02-06T22:15:59.811374+08:00,2e44f1cb-4f1d-4ee0-82e4-71c568230c2f
+02/05/2026,Thu,contact lens solution,1,319,mari,Health,Eye Care,2026-02-06T22:15:59.811374+08:00,8fbb2151-72b8-4bd7-8462-88ceab9c38f7
+02/05/2026,Thu,MoveIt,1,97,bpi,Transportation,Moto Taxi,2026-02-06T22:15:59.811374+08:00,3b6ab0f5-48c6-41ba-a56f-88e40eb868a0
+02/05/2026,Thu,Jeep Fare,1,12,cash,Transportation,Jeep,2026-02-06T22:15:59.811374+08:00,f352296e-ffdc-49b6-9c0e-661ea92a18c9
+02/05/2026,Thu,CR,1,10,cash,Misc,Misc,2026-02-06T22:15:59.811374+08:00,658119b7-7793-45ca-8237-4d736474bf58
+02/05/2026,Thu,Burger King,1,230,mari,Food,Fast Food,2026-02-06T22:15:59.811374+08:00,c4c74dcb-2f59-4d6f-b232-4043fa0b0fcc
+02/05/2026,Thu,Dairy Queen,1,129,mari,Food,Dessert,2026-02-06T22:15:59.811374+08:00,6558d06f-c825-417e-bf18-b246edcb60d3
+02/05/2026,Thu,Deodorant,2,165,mari,Personal,Hygiene,2026-02-06T22:15:59.811374+08:00,fb66079d-761d-416f-b2c3-01f700997c9f
+02/05/2026,Thu,Jeep Fare,1,15,cash,Transportation,Jeep,2026-02-06T22:15:59.811374+08:00,1c2f1877-2129-474a-8c48-d3b99a4dc1cb
+02/05/2026,Thu,Pancit Canton,2,40,cash,Food,Snack,2026-02-06T22:15:59.811374+08:00,94a2402e-4937-4905-8ede-78123a932351
+02/05/2026,Thu,Onigiri,1,59,cash,Food,Snack,2026-02-06T22:15:59.811374+08:00,ef5be781-2805-42c3-8653-66c5e63278fa
+02/06/2026,Fri,Angkas,1,70,cash,Transpo,Moto Taxi,2026-02-06T22:15:59.811374+08:00,8ec0d42b-2a1c-4db9-957f-23cf1bad57cc
+02/06/2026,Fri,MoveIt,1,96,mari,Transpo,Moto Taxi,2026-02-06T22:15:59.811374+08:00,9a734856-675f-453c-8d1e-bb2696b19fa2
+02/06/2026,Fri,Chicken ,1,109,mari,Food,Carinderia,2026-02-06T22:15:59.811374+08:00,e07bc9fc-353d-41a6-9c44-d78462bc5319
+02/06/2026,Fri,Milk,1,117,mari,Food,Groceries,2026-02-06T22:15:59.811374+08:00,1985d9f1-7366-4732-a614-d1e66a693e27
+02/06/2026,Fri,Chicken + tuna melt,1,132,mari,Food,Conv store,2026-02-06T22:15:59.811374+08:00,2e8b408b-c058-4889-9907-edce5a02c107

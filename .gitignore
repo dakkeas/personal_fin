@@ -1,0 +1,7 @@
+/env
+pf_dbt_core/target/
+pf_dbt_core/dbt_packages/
+pf_dbt_core/logs/
+secret/credentials.json
+secret/service-account.json
+secret/token.json

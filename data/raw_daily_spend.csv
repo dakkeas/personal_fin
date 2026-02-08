@@ -1,0 +1,18 @@
+date,day,lineitem,quantity,total_cost,payment_type,type,subtype
+02/05/2026,Thu,Bus Fare,1,142,cash,Transportation,Bus
+02/05/2026,Thu,MoveIt,1,117,bpi,Transportation,Moto Taxi
+02/05/2026,Thu,contact lens solution,1,319,mari,Health,Eye Care
+02/05/2026,Thu,MoveIt,1,97,bpi,Transportation,Moto Taxi
+02/05/2026,Thu,Jeep Fare,1,12,cash,Transportation,Jeep
+02/05/2026,Thu,CR,1,10,cash,Misc,Misc
+02/05/2026,Thu,Burger King,1,230,mari,Food,Fast Food
+02/05/2026,Thu,Dairy Queen,1,129,mari,Food,Dessert
+02/05/2026,Thu,Deodorant,2,165,mari,Personal,Hygiene
+02/05/2026,Thu,Jeep Fare,1,15,cash,Transportation,Jeep
+02/05/2026,Thu,Pancit Canton,2,40,cash,Food,Snack
+02/05/2026,Thu,Onigiri,1,59,cash,Food,Snack
+02/06/2026,Fri,Angkas,1,70,cash,Transpo,Moto Taxi
+02/06/2026,Fri,MoveIt,1,96,mari,Transpo,Moto Taxi
+02/06/2026,Fri,Chicken ,1,109,mari,Food,Carinderia
+02/06/2026,Fri,Milk,1,117,mari,Food,Groceries
+02/06/2026,Fri,Chicken + tuna melt,1,132,mari,Food,Conv store
