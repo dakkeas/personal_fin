@@ -2,7 +2,7 @@
 from google.cloud import bigquery
 import os
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'../service-account.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'C:\Users\justi\Documents\coding-projects\personal_fin\secret\service-account.json'
 
 # Initialize BigQuery client
 client = bigquery.Client()

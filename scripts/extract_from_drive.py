@@ -72,7 +72,7 @@ def main():
         
         current_time = datetime.now(ZoneInfo("Asia/Manila")).isoformat()
         df['time_ingested'] = current_time
-        df['unique_id'] = [str(uuid.uuid4()) for _ in range(len(df))]  # unique ID per row
+        # df['unique_id'] = [str(uuid.uuid4()) for _ in range(len(df))]  # unique ID per row
 
         columns_to_hash = ['date', 'day', 'lineitem', 'type', 'subtype', 'total_cost', 'payment_type']
         

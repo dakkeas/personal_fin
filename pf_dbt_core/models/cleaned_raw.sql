@@ -23,24 +23,19 @@
 
 WITH ranked AS (
     SELECT
-        unique_id,
+        hash_key, -- unique key
 
-        FORMAT_TIMESTAMP(
-          '%H:%M:%S %d-%m-%Y',
-          TIMESTAMP(time_ingested)
-        ) || ' PHT' AS time_ingested,
+        time_ingested AS timestamp_ingested_raw,
+        -- Time only
+        FORMAT_TIMESTAMP('%H:%M:%S PHT', TIMESTAMP(time_ingested)) AS time_ingested,
+        -- Date only
+        FORMAT_TIMESTAMP('%d-%m-%Y', TIMESTAMP(time_ingested)) AS date_ingested,
 
-        PARSE_DATE('%m/%d/%Y', date) AS time_logged,
+        date AS timestamp_logged_raw,
 
-        CASE EXTRACT(DAYOFWEEK FROM PARSE_DATE('%m/%d/%Y', date))
-            WHEN 1 THEN 'Sunday'
-            WHEN 2 THEN 'Monday'
-            WHEN 3 THEN 'Tuesday'
-            WHEN 4 THEN 'Wednesday'
-            WHEN 5 THEN 'Thursday'
-            WHEN 6 THEN 'Friday'
-            WHEN 7 THEN 'Saturday'
-        END AS day_logged,
+        DATE(PARSE_DATETIME('%m/%d/%Y %H:%M:%S', date)) AS date_logged,
+
+        FORMAT_DATETIME('%H:%M:%S', PARSE_DATETIME('%m/%d/%Y %H:%M:%S', date)) AS time_logged,
 
         lineitem,
         total_cost,
@@ -51,11 +46,10 @@ WITH ranked AS (
         ROW_NUMBER() OVER (
             PARTITION BY hash_key
             ORDER BY TIMESTAMP(time_ingested) DESC
-        ) AS row_num
+        ) AS ingest_row_num
 
-    FROM `project-23eb5c74-4a49-46c1-a0e.personal_finance.raw_daily_spend`
+    FROM {{ref('raw_daily_spend')}}
 )
-
 SELECT *
 FROM ranked
 WHERE row_num = 1
